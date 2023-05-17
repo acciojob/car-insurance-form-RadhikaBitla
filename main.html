@@ -7,19 +7,33 @@
 </head>
 
 <body>
+	<style>
+		div
+		{
+			background-color:gray;
+			width:500px;
+		}
+		form
+		{
+			border:8px solid;
+			padding:100px;
+		}
+	</style>
 	<div>
 		<form method="post" action="">
-			
+			<h1>Car Insurance Form</h1>
+			<div>
 			<label for="name">Name</label>
 			<input type="text" id="name" required><br>
 
 			<label for="email">Email</label>
 			<input type="email" id="email" required><br>
 
+			<div style="background-color:#F33333;width:100px">
 			<label for="gender">Gender</label><br>
 			<input type="radio" name="gender" required>Male<br>
 			<input type="radio" name="gender" required>Female<br>
-
+			</div>
 			<label for="cars">Car Brands</label>
 			<select id="cars">
 				<option>BMW</option>
@@ -27,7 +41,7 @@
 				<option>Mercedez</option>
 			</select><br>
 
-			<label for="age">Car Age</label>
+			<label for="carage">Car Age</label>
 			<input type="number" id="carage" required><br>
 
 			<label for="dop">Date of Purchase</label>
@@ -37,6 +51,7 @@
 			<input type="password" id="password" required><br>
 
 			<button type="submit">submit</button>
+			</div>
 		</form>
 	</div>
 </body>
